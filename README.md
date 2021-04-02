@@ -10,7 +10,7 @@
     - Use this token in point 6 <img src="https://user-images.githubusercontent.com/10156301/113424885-914f1f00-93d9-11eb-9403-2f2501e958f7.png" alt="Token" width="300">
 
 5. Now you should create `sonar-project.properties` in folder of the project that you will scan. You can get a file from this repo or you can take a look [HERE](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/#header-1)
-6. Now you should run SonarScanner to scan your code. You can take a look how to run SonarScanner from the Docker image from [HERE](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/#header-3) or you can use command below BUT NOTE YOU SHOULD CHANGE PARAMETERS WITH PARAMETERS FROM POINT 4
+6. Now you should run SonarScanner to scan your code. You can take a look how to run SonarScanner from the Docker image from [HERE](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/#header-3) or you can use command below BUT NOTE YOU SHOULD CHANGE ${TOKEN_FROM_POINT_4} WITH Provided TOKEN FROM POINT 4
 ```
 docker run --rm -e SONAR_HOST_URL="http://localhost:9000" -e SONAR_LOGIN="${TOKEN_FROM_POINT_4}" -v "${PATH_TO_YOUR_REPO}:/usr/src" sonarsource/sonar-scanner-cli -X
 ```
