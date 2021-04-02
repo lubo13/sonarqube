@@ -5,9 +5,10 @@
 3. If everything is running correctly when you go [http://localhost:9000/](http://localhost:9000/) you will see SonarQube UI. If you see error maybe you have problem with Elasticsearch and you should increase `vm.max_map_count`. Please look below for a link with fixes.
 4. After you are running SonarQube server you should configure your project there. After configuration SonarQube will give you parameters for running SonarScaner.
     - For login use U: admin P: admin
-    - Create project
-    - Generate Token
-    - Use this token in point 6
+    - Create project <img src="https://user-images.githubusercontent.com/10156301/113424664-30bfe200-93d9-11eb-98b7-07286f44e009.png" alt="Create project" width="300">
+    - Generate Token <img src="https://user-images.githubusercontent.com/10156301/113424914-9ad88700-93d9-11eb-9294-4530861a57e8.png" alt="Generate Token" width="300">
+    - Use this token in point 6 <img src="https://user-images.githubusercontent.com/10156301/113424885-914f1f00-93d9-11eb-9403-2f2501e958f7.png" alt="Token" width="300">
+
 5. Now you should create `sonar-project.properties` in folder of the project that you will scan. You can get a file from this repo or you can take a look [HERE](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/#header-1)
 6. Now you should run SonarScanner to scan your code. You can take a look how to run SonarScanner from the Docker image from [HERE](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/#header-3) or you can use command below BUT NOTE YOU SHOULD CHANGE PARAMETERS WITH PARAMETERS FROM POINT 4
 ```
